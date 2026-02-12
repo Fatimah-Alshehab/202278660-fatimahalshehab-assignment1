@@ -1,0 +1,79 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic text */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* General Section Layout */
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Hero Section (Image + Name + Tagline stacked) */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+/* Circular Image */
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Tagline spacing */
+.tagline {
+  font-size: 18px;
+}
+
+#about-me h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about-box {
+  background-color: #fafafa;
+  border: 2px solid #ddd;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
