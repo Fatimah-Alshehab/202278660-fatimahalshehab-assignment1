@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>My Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -23,49 +24,45 @@
 
 <main>
 
-  <!-- Picture + Name + Tagline -->
-    <section id="about" class="section hero">
-    <img class="profile-pic" src="assets/images/profile.jpg" alt="Fatimah Alshehab">
+<!-- HERO -->
+<section id="about" class="section hero">
+  <img class="profile-pic" src="assets/images/profile.jpg" alt="Fatimah Alshehab">
 
-    <h1 class="hero-name">
-    Hello, I'm <span class="gradient-text">Fatimah Alshehab</span>
-    </h1>
+  <h1 class="hero-name">
+    Hello, I'm <span class="gradient-text">Fatimah Ahmed</span>
+  </h1>
 
-    <p class="hero-tagline">Software Engineering Student at KFUPM</p>
-    </section>
-
-
-  <!-- About Me Section -->
-    <section id="about-me" class="section">
-    <h2>About Me</h2>
-
-    <div class="about-box">
-        <p>
-        I am a Software Engineering student at KFUPM with a strong interest in web development
-        and user interface design. I enjoy building clean, structured, and user-friendly websites.
-        </p>
-        <p>
-        I am continuously improving my technical skills and exploring new tools to create
-        meaningful digital solutions.
-        </p>
-    </div>
-    </section>
+  <p class="hero-tagline">Software Engineering Student @KFUPM</p>
+</section>
 
 
+<!-- ABOUT -->
+<section id="about-me" class="section">
+  <h2>About Me</h2>
+
+  <div class="glass-box">
+    <p>
+      I am a Software Engineering student at KFUPM with a strong interest in web development
+      and user interface design. I enjoy building clean, structured, and user-friendly websites.
+    </p>
+    <p>
+      I am continuously improving my technical skills and exploring new tools to create
+      meaningful digital solutions.
+    </p>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
 <section id="projects" class="section">
-  <h2>Projects</h2>
+  <h2> Featured <span class="gradient-text">Projects</span></h2>
 
   <div class="projects-container">
 
-    <div class="project-card">
-      <img src="assets/images/project1.png" alt="Project 1 image" class="project-image">
-
+    <div class="glass-box project-card">
+      <img src="assets/images/project1.png" alt="Project 1" class="project-image">
       <h3>Project Title</h3>
-
-      <p>
-        Short description of the project explaining what it does and its purpose.
-      </p>
-
+      <p>Short description of the project explaining what it does and its purpose.</p>
       <div class="project-tags">
         <span class="tag">HTML</span>
         <span class="tag">CSS</span>
@@ -73,61 +70,47 @@
       </div>
     </div>
 
-    <div class="project-card">
-      <img src="assets/images/project2.png" alt="Project 2 image" class="project-image">
-
+    <div class="glass-box project-card">
+      <img src="assets/images/project2.png" alt="Project 2" class="project-image">
       <h3>Another Project</h3>
-
-      <p>
-        Another short description explaining what this project is about.
-      </p>
-
-      <div class="project-tags">
-        <span class="tag">React</span>
-        <span class="tag">API</span>
-      </div>
-
-    </div>
-
-        <div class="project-card">
-      <img src="assets/images/project3.png" alt="Project 3 image" class="project-image">
-
-      <h3>Another Project</h3>
-
-      <p>
-        Another short description explaining what this project is about.
-      </p>
-
+      <p>Another short description explaining what this project is about.</p>
       <div class="project-tags">
         <span class="tag">React</span>
         <span class="tag">API</span>
       </div>
     </div>
 
-        <div class="project-card">
-      <img src="assets/images/project2.png" alt="Project 2 image" class="project-image">
-
+    <div class="glass-box project-card">
+      <img src="assets/images/project3.jpg" alt="Project 3" class="project-image">
       <h3>Another Project</h3>
-
-      <p>
-        Another short description explaining what this project is about.
-      </p>
-
+      <p>Another short description explaining what this project is about.</p>
       <div class="project-tags">
         <span class="tag">React</span>
         <span class="tag">API</span>
       </div>
     </div>
+
+    <div class="glass-box project-card">
+      <img src="assets/images/Screenshot 2026-02-13 200948.png" alt="Project 4" class="project-image">
+      <h3>Another Project</h3>
+      <p>Another short description explaining what this project is about.</p>
+      <div class="project-tags">
+        <span class="tag">React</span>
+        <span class="tag">API</span>
+      </div>
+    </div>
+
   </div>
 </section>
 
 
+<!-- SKILLS -->
 <section id="skills" class="section">
-  <h2>Technical Skills</h2>
+  <h2>Technical <span class="gradient-text">Skills</span></h2>
 
   <div class="skills-grid">
 
-    <div class="skill-card">
+    <div class="skill-card glass-box">
       <img src="assets/images/python.svg" alt="Python">
       <div class="skill-text">
         <h3>Python</h3>
@@ -135,7 +118,7 @@
       </div>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-card glass-box">
       <img src="assets/images/javascript.svg" alt="JavaScript">
       <div class="skill-text">
         <h3>JavaScript</h3>
@@ -143,7 +126,7 @@
       </div>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-card glass-box">
       <img src="assets/images/java.svg" alt="Java">
       <div class="skill-text">
         <h3>Java</h3>
@@ -151,7 +134,7 @@
       </div>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-card glass-box">
       <img src="assets/images/c-sharp.svg" alt="C#">
       <div class="skill-text">
         <h3>C#</h3>
@@ -159,23 +142,23 @@
       </div>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-card glass-box">
       <img src="assets/images/html.svg" alt="HTML">
       <div class="skill-text">
         <h3>HTML</h3>
-        <p>Web development</p>
+        <p>Web Development</p>
       </div>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-card glass-box">
       <img src="assets/images/css.svg" alt="CSS">
       <div class="skill-text">
         <h3>CSS</h3>
-        <p>Web development</p>
+        <p>Web Development</p>
       </div>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-card glass-box">
       <img src="assets/images/github.svg" alt="GitHub">
       <div class="skill-text">
         <h3>GitHub</h3>
@@ -183,7 +166,7 @@
       </div>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-card glass-box">
       <img src="assets/images/notion.svg" alt="Notion">
       <div class="skill-text">
         <h3>Notion</h3>
@@ -191,7 +174,7 @@
       </div>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-card glass-box">
       <img src="assets/images/figma.svg" alt="Figma">
       <div class="skill-text">
         <h3>Figma</h3>
@@ -199,7 +182,7 @@
       </div>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-card glass-box">
       <img src="assets/images/chat-gpt.svg" alt="ChatGPT">
       <div class="skill-text">
         <h3>ChatGPT</h3>
@@ -211,32 +194,32 @@
 </section>
 
 
-
+<!-- CONTACT -->
 <section id="contact" class="section">
   <h2>Contact Me</h2>
+    <div class="glass-box">
+    <form class="contact-form">
 
-  <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Firstname Lastname" required>
+      </div>
 
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Firstname Lastname" required>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="youremail@gmail.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Any message you want..." required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+
+    </form>
     </div>
-
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required>
-    </div>
-
-    <div class="form-group">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Any thing you want to send..." required></textarea>
-    </div>
-
-    <button type="submit">Send Message</button>
-
-  </form>
 </section>
-
 
 </main>
 
