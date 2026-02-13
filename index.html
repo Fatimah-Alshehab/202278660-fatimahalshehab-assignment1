@@ -4,24 +4,33 @@
   <meta charset="UTF-8">
   <title>My Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/images/favicon.svg">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Portfolio of Fatimah Alshehab, a Software Engineering student at KFUPM. Projects, technical skills, and contact information.">
 </head>
 
 <body>
+  <button class="theme-toggle" id="themeToggle">🌙</button>
 
-<header>
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="#about">Home</a></li>
-      <li><a href="#about-me">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <nav class="navbar">
 
+      <ul class="nav-links">
+        <li><a href="#about">Home</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="font-control">
+    <button id="decreaseText">A-</button>
+    <span class="divider">|</span>
+    <button id="increaseText">A+</button>
+  </div>
 <main>
 
 <!-- HERO -->
@@ -29,7 +38,7 @@
   <img class="profile-pic" src="assets/images/profile.jpg" alt="Fatimah Alshehab">
 
   <h1 class="hero-name">
-    Hello, I'm <span class="gradient-text">Fatimah Ahmed</span>
+    Hello, I'm <span class="gradient-text">Fatimah Ahmed Alshehab</span>
   </h1>
 
   <p class="hero-tagline">Software Engineering Student @KFUPM</p>
@@ -91,7 +100,7 @@
     </div>
 
     <div class="glass-box project-card">
-      <img src="assets/images/Screenshot 2026-02-13 200948.png" alt="Project 4" class="project-image">
+      <img src="assets/images/project4.png" alt="Project 4" class="project-image">
       <h3>Another Project</h3>
       <p>Another short description explaining what this project is about.</p>
       <div class="project-tags">
@@ -222,6 +231,9 @@
 </section>
 
 </main>
+<footer class="footer">
+  <p>© 2026 Fatimah Alshehab. All rights reserved.</p>
+</footer>
 
 <script src="js/script.js"></script>
 </body>
