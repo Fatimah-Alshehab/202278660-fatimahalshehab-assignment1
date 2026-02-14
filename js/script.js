@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // ---------------------------
-  // Scroll reveal (repeatable, no vibration)
+  // Scroll reveal
   // ---------------------------
   const elements = document.querySelectorAll("section, .project-card, .skill-card");
   elements.forEach((el) => el.classList.add("reveal"));
