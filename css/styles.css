@@ -77,7 +77,6 @@ body {
   z-index: 1000;
 }
 
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -128,6 +127,7 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
+  color: #444;
   font-size: 1rem;
   font-family: inherit;
 }
@@ -355,7 +355,6 @@ body {
 
 }
 
-
 .skill-text h3 {
   margin: 0;
 }
@@ -407,6 +406,7 @@ button:hover {
   border: #9f7eec;
 }
 
+/* ================= FOOTER ================= */
 
 .footer {
   max-width: 900px;
@@ -466,6 +466,7 @@ body.dark .footer p {
 }
 
 
+/* ================= DARK MODE ================= */
 
 body.dark {
   color: #e4e4e7;
