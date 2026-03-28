@@ -95,3 +95,76 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+  // ---------------------------
+  // Project filter
+  // ---------------------------
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const projectCards = document.querySelectorAll(".project-card");
+  const noProjectsMessage = document.getElementById("noProjectsMessage");
+
+  if (filterButtons.length && projectCards.length) {
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const filterValue = button.dataset.filter;
+
+        filterButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        let visibleCount = 0;
+
+        projectCards.forEach((card) => {
+          const category = card.dataset.category;
+
+          if (filterValue === "all" || category === filterValue) {
+            card.style.display = "flex";
+            visibleCount++;
+          } else {
+            card.style.display = "none";
+          }
+        });
+
+        if (noProjectsMessage) {
+          noProjectsMessage.style.display = visibleCount === 0 ? "block" : "none";
+        }
+      });
+    });
+  }
+
+  // ---------------------------
+  // Contact form validation
+  // ---------------------------
+  const contactForm = document.querySelector(".contact-form");
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const messageInput = document.getElementById("message");
+  const formMessage = document.getElementById("formMessage");
+
+  if (contactForm && nameInput && emailInput && messageInput && formMessage) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const nameValue = nameInput.value.trim();
+      const emailValue = emailInput.value.trim();
+      const messageValue = messageInput.value.trim();
+
+      if (!nameValue || !emailValue || !messageValue) {
+        formMessage.textContent = "Please fill in all fields before sending your message.";
+        formMessage.className = "form-message error";
+        return;
+      }
+
+      const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+
+      if (!emailPattern.test(emailValue)) {
+        formMessage.textContent = "Please enter a valid email address.";
+        formMessage.className = "form-message error";
+        return;
+      }
+
+      formMessage.textContent = "Your message has been sent successfully!";
+      formMessage.className = "form-message success";
+
+      contactForm.reset();
+    });
+  }

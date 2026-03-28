@@ -65,10 +65,15 @@
 <!-- PROJECTS -->
 <section id="projects" class="section">
   <h2> Featured <span class="gradient-text">Projects</span></h2>
-
+  <div class="project-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="csharp">C#</button>
+    <button class="filter-btn" data-filter="java">Java</button>
+    <button class="filter-btn" data-filter="design">Design</button>
+  </div>
   <div class="projects-container">
 
-    <div class="glass-box project-card">
+    <div class="glass-box project-card" data-category="csharp">
       <img src="assets/images/project1.png" alt="Project 1" class="project-image">
       <h3>Folder Structure Visualizer</h3>
       <p>A C# application that visualizes folder contents
@@ -82,7 +87,7 @@
       </div>
     </div>
 
-    <div class="glass-box project-card">
+    <div class="glass-box project-card" data-category="csharp">
       <img src="assets/images/project2.png" alt="Project 2" class="project-image">
       <h3>University Class Route Planner</h3>
       <p>A C# application that reads university class data from Excel files and
@@ -97,7 +102,7 @@
       </div>
     </div>
 
-    <div class="glass-box project-card">
+    <div class="glass-box project-card" data-category="java">
       <img src="assets/images/project3.jpg" alt="Project 3" class="project-image">
       <h3>University Events Booking System</h3>
       <p>A JavaFX application that allows users to browse and book university events,
@@ -112,7 +117,7 @@
       </div>
     </div>
 
-    <div class="glass-box project-card">
+    <div class="glass-box project-card" data-category="design">
       <img src="assets/images/project4.png" alt="Project 4" class="project-image">
       <h3>KFUPM Academic Co-Pilot</h3>
       <p>Designed a desktop web platform in Figma to support KFUPM students in
@@ -128,6 +133,9 @@
       </div>
     </div>
 
+    <p id="noProjectsMessage">
+      No projects found.
+    </p>
   </div>
 </section>
 
@@ -226,6 +234,8 @@
 <section id="contact" class="section">
   <h2>Contact Me</h2>
     <div class="glass-box">
+    <p id="formMessage" class="form-message"></p>
+
     <form class="contact-form">
 
       <div class="form-group">
