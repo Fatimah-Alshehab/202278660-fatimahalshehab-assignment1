@@ -5,6 +5,8 @@
 This portfolio website was developed using HTML, CSS, and JavaScript.  
 The project follows a structured folder organization to maintain clarity and separation of concerns.
 
+The website was initially created in Assignment 1 and later enhanced in Assignment 2 by adding interactive and dynamic features.
+
 ---
 
 ## Technologies Used
@@ -18,7 +20,7 @@ The project follows a structured folder organization to maintain clarity and sep
 
 ## Project Structure
 
-assignment-1/
+assignment-2/
 ├── index.html  
 ├── css/styles.css  
 ├── js/script.js  
@@ -55,7 +57,26 @@ The project separates styling, scripting, and assets into dedicated folders to i
 - rem units are used for scalable typography.
 - Buttons allow increasing and decreasing text size within limits.
 
-### 6. Glass UI Design
+### 6. Dynamic Project Filtering (Assignment 2)
+- Projects are filtered based on selected categories (All, C#, Java, Design).
+- Implemented using data attributes and JavaScript event listeners.
+- Updates the displayed content dynamically without reloading the page.
+
+### 7. Time-Based Greeting (Assignment 2)
+- Displays a greeting message based on the current time of day.
+- Uses JavaScript Date object to determine morning, afternoon, or evening.
+
+### 8. Form Validation and User Feedback (Assignment 2)
+- Validates user input in the contact form.
+- Checks for empty fields and valid email format.
+- Displays error and success messages dynamically.
+
+### 9. Hover Animations (Assignment 2)
+- Project and skill cards include hover effects.
+- Uses CSS transitions for smooth scaling and shadow effects.
+- Enhances interactivity and user experience.
+
+### 10. Glass UI Design
 - Achieved using backdrop-filter and semi-transparent backgrounds.
 - Soft gradients and subtle shadows enhance visual depth.
 
@@ -82,7 +103,6 @@ It is responsive and functions across modern browsers.
 
 ## Future Improvements
 
-- Add form validation feedback.
-- Improve animation timing.
-- Add smoother transitions between sections.
+- Add backend support for sending real emails from the contact form.
+- Improve animation timing and transitions.
 - Enhance accessibility features further.
