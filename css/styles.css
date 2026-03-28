@@ -280,6 +280,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.35);
 }
 
 .project-card.glass-box {
@@ -291,8 +298,12 @@ body {
   height: 250px;
   object-fit: fill;
   border-radius: 15px;
+  transition: transform 0.4s ease;
 }
 
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
 .project-tags {
   display: flex;
   flex-wrap: wrap;
@@ -368,6 +379,13 @@ body {
   display: flex;
   align-items: center;
   gap: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.35);
 }
 
 .skill-card.glass-box {
@@ -378,6 +396,7 @@ body {
   width: 60px;
   height: 60px;
   object-fit: contain;
+  transition: transform 0.3s ease;
 
   background-color: rgba(255, 255, 255, 0.2);
   padding: 5px;
@@ -385,6 +404,14 @@ body {
   border: 1px solid rgba(239, 238, 238, 0.7);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
 
+}
+
+.skill-card:hover img {
+  transform: scale(1.10);
+}
+
+.skill-card:hover h3 {
+  color: #7c3aed;
 }
 
 .skill-text h3 {
@@ -659,4 +686,16 @@ body.dark .form-message.error {
 
 body.dark .form-message.success {
   color: #86efac;
+}
+
+body.dark .project-card:hover {
+  background: rgba(25, 25, 40, 0.4);
+}
+
+body.dark .skill-card:hover h3 {
+  color: #c084fc;
+}
+
+body.dark .skill-card:hover {
+  background: rgba(25, 25, 40, 0.4);
 }

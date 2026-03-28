@@ -154,8 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
-
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailPattern.test(emailValue)) {
         formMessage.textContent = "Please enter a valid email address.";
         formMessage.className = "form-message error";
