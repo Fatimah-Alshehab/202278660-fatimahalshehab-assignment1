@@ -267,6 +267,12 @@ body {
   padding: 20px;
 }
 
+.greeting-text {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #777;
+  font-weight: 500;
+}
 /* ================= PROJECTS ================= */
 
 .projects-container {
@@ -698,4 +704,8 @@ body.dark .skill-card:hover h3 {
 
 body.dark .skill-card:hover {
   background: rgba(25, 25, 40, 0.4);
+}
+
+body.dark .greeting-text {
+  color: #a1a1b5;
 }
